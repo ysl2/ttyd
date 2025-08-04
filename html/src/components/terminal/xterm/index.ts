@@ -154,6 +154,7 @@ export class Xterm {
     @bind
     public open(parent: HTMLElement) {
         this.terminal = new Terminal(this.options.termOptions);
+        this.terminal.options.fontFamily = 'FiraCode';
         const { terminal, fitAddon, overlayAddon, clipboardAddon, webLinksAddon } = this;
         window.term = terminal as TtydTerminal;
         window.term.fit = () => {

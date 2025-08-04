@@ -1,3 +1,26 @@
+# ttyd (fork and patched with FiraCode Nerd Font support)
+
+> Ref: https://github.com/metorm/ttyd-nerd-font
+
+## Installation
+
+```bash
+sudo apt-get update
+sudo apt-get install -y build-essential cmake git libjson-c-dev libwebsockets-dev
+git clone git@github.com:ysl2/ttyd.git
+cd ttyd && mkdir build && cd build
+cmake ..
+make && sudo make install
+```
+
+## Usage
+
+```bash
+ttyd -p "$YOUR_PORT" -W -t fontSize=15 -t fontFamily="FiraCode" bash
+```
+
+---
+
 ![backend](https://github.com/tsl0922/ttyd/workflows/backend/badge.svg)
 ![frontend](https://github.com/tsl0922/ttyd/workflows/frontend/badge.svg)
 [![GitHub Releases](https://img.shields.io/github/downloads/tsl0922/ttyd/total)](https://github.com/tsl0922/ttyd/releases)
